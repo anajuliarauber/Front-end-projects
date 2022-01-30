@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <nav>
+        <div class="topContent">
+            <header>
+                <img src="images/logo.svg" alt="" class="logo hidden">
+                <img src="images/menu.svg" alt="" class="menu">
+            </header>
+            <main>
+                <div class="search">
+                    <img src="images/search.svg" alt="" class="searchImage">
+                    <input type="text" placeholder="Buscar" class="hidden searchInput">
+                </div>
+                <ul>
+                    <li class="dashboard">
+                        <a href="">
+                            <img src="images/grid.svg" alt="" class="linksImage">
+                            <span class="linksDescription hidden">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="pets">
+                        <a href="">
+                            <img src="images/pet.svg" alt="" class="linksImage">
+                            <span class="linksDescription hidden">Pets</span>
+                        </a>
+                    </li>
+                    <li class="clients">
+                        <a href="">
+                            <img src="images/user.svg" alt="" class="linksImage">
+                            <span class="linksDescription hidden">Clientes</span>
+                        </a>
+                    </li>
+                    <li class="vets">
+                        <a href="">
+                            <img src="images/vet.svg" alt="" class="linksImage">
+                            <span class="linksDescription hidden">Vets</span>
+                        </a>
+                    </li>
+                    <li class="settings">
+                        <a href="">
+                            <img src="images/settings.svg" alt="" class="linksImage">
+                            <span class="linksDescription hidden">Ajustes</span>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <footer>
+            <div class="profileInfo hidden">
+                <img src="images/photo.jpg" alt="" class="profilePicture" >
+                <div class="userInfo">
+                    <p class="profileName">Eleanor Pena</p>
+                    <p class="job">Veterinária</p>
+                </div>
+            </div>
+            <img src="images/log-out.svg" alt="" class="logOut linksImage" >
+        </footer>
+
+    </nav>
+    <main>
+        <h1>Page content</h1>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

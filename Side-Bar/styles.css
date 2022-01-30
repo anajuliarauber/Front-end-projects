@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #18C29C;
+    width: 70px;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.active{
+    width: 190px;
+}
+
+.hidden{
+    display: none;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    fill: #084236;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logo{
+    fill: #084236;
+    width: 65px;
+    height: 40px;
+    margin-left: 12px;
+}
+.search{
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.searchImage{
+    background-color: #18C29C;
+    fill: #084236;
+    width: 24px;
+    height: 24px;
+    margin-left:22px ;
+}
+
+input{
+    width: 36px;
+    height: 36px;
+    border-radius: 7px;
+    border:none;
+    background-color: #8ed7c6;
+    color:#084236;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.active input{
+    display: inline;
+    width: 90px;
+    margin-left: 22px;
+}
+
+li:hover{
+    background-color:#8ed7c6 ;
+}
+
+li a{
+    height: 38px;
+    text-decoration: none;  
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.linksImage{
+    fill: #084236;
+    width: 24px;
+    height: 24px;
+    margin-left:22px ;
+}
+
+
+.active .linksDescription{
+    display: inline;
+    margin-left:22px;
+    color: #084236;
+    font-family:'Poppins', sans-serif;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.active .profileInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.active .profilePicture{
+    max-width: 60px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.active .userInfo{
+    color: #084236;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.logOut{
+    cursor:pointer;
+    margin:0;
+}
+
+body>main{
+    background-color: #dce4e3;
+    flex-grow: 1;
+    color: #084236;
+    font-family:'Poppins', sans-serif;
+}
+
+main>h1{
+    margin: 15px;
+}
