@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAF7FD;
+    font-family: 'Poppins', sans-serif;
+    color: #BB99DD;
+}
+
+#container{
+    width: 400px;
+    height: 100vh;
+    margin: 7vh auto 0 auto;
+}
+
+figure{
+    max-width: 210px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figcaption{
+    margin-top: 13px;
+    margin-bottom:28px ;
+}
+
+#profilePicture{
+    max-width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    border: 2px solid #BB99DD;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+nav li{
+    width: 270px;
+    height: 40px;
+    border: 2px solid #BB99DD;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    color: #BB99DD;
+    /*text-decoration: none;*/
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 250px;
+    margin: 40px auto;
+}
+
