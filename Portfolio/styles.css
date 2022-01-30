@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22212C;
+}
+
+.container{
+    display: flex;
+}
+
+.cards{
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    border-radius: 10px;
+    background-color: #302F3D;
+    box-shadow: 1px 1px 3px black;
+    margin: 30px;
+
+}
+
+.leftSection{
+    width: 350px;
+}
+
+.rightSection{
+   flex-grow: 1;
+
+}
+
+.profile{
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    max-width: 125px;
+    max-height: 125px;
+    border-radius: 50%;
+    border: 2px solid #00FF00;
+    margin-bottom: 15px;
+}
+
+.profile h1{
+    font-weight:700;
+    font-size: 23px;
+    line-height: 1.9;
+}
+
+.profile p{
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.navLinks{
+    height: 280px;
+}
+
+.navLinks ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;
+}
+
+li a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height:30px ;
+}
+
+.linksImage{
+    margin: 20px;
+    
+}
+
+.linksDescription{
+    margin:0px;
+}
+
+li a{
+    text-decoration: none;
+    color: #837E9F;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.technologies{
+    height: 210px;
+}
+
+h2{
+    font-size: 19px;
+    padding: 20px;
+}
+
+#techList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.techItems{
+    width: 85px;
+    height: 24px;
+    background-color: #CB92B1;
+    border-radius: 30px;
+    border:none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #22212C;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education{
+    height: 280px;
+}
+
+.education ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+li h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.educationParagraph{
+    font-size: 11px;
+}
+
+
+li>a>p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.projectsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project{
+    width: 378px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projectDescription{
+    padding: 15px;
+    font-size: 12px;
+}
+
