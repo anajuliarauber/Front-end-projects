@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Light theme colors*/
+body[data-theme="light"]{
+    --color-1: rgb(196,220,241);
+    --color-2:white;
+    --color-3: rgb(200,200,200);
+    --color-4: rgb(80,82,110);
+}
+
+/* Dark theme colors*/
+body[data-theme="dark"]{
+    --color-1: #1e1f26;
+    --color-2:#292c33;
+    --color-3: rgb(39,40,42);
+    --color-4: rgb(186,186,202);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-1);
+}
+
+.theme-switcher{
+     position: absolute;
+     right: 30px;
+     top:10px;
+}
+
+input{
+    visibility: hidden;
+}
+
+label{
+    display: block;
+    text-indent: -999999px;
+    height: 30px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: black;
+    top: 50%;
+    left: 5px;
+    transform: translatey(-50%);
+    transition: 1s ease ;
+}
+
+input:checked + label{
+    background-color: #1e1f26;
+    border: solid white;
+}
+
+input:checked + label::after{
+    background-color: white;
+    left: calc(100% - 25px);
+}
+ 
