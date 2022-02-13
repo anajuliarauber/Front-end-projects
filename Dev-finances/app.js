@@ -120,6 +120,7 @@ const Utils = {
 
     formatAmount(value){
         value = Number(value) * 100;
+        value.toFixed(2);
         
         return value;
     },
